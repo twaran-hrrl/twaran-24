@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+}
+
+/* Styling the logo header */
+
+.logo_header {
+    margin: 10px auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_header img {
+    height : 100px;
+    width : 176px;
+}
+
+/* Styling the menu */
+
+.menu { 
+    box-sizing: border-box;
+    margin: 10px auto;
+    width: 800px;
+    height: 40px;
+    border-top: solid 3px #989da0;
+    border-bottom: solid 3px #989da0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.menu a {
+    display: inline-block;  
+    width: 197px;
+    color : #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a #upcoming_events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a #completed_events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a #points_table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a #teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the category of games*/
+
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    color: #f74747;
+}
+
+/* Common style for all events */
+
+.racket_and_board,.sprints,.jump_and_throw,.team_sports,.marathons,.special_events{
+    margin: 0 auto;
+    width: 800px;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* styling racket and board games */
+
+#badminton,#tt,#lawn_tennis,#squash,#carom,#cards,#chess{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    margin: 0 10px 0 0;
+    border: solid 1px #000;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image within the div */
+}
+
+#badminton:hover,#tt:hover,#lawn_tennis:hover,#squash:hover,#carom:hover,#cards:hover,
+#chess:hover{
+    background-image: none;
+    background-color: #000;
+    color: #fff;
+}
+
+#badminton::after,#tt::after,#lawn_tennis::after,#squash::after,#carom::after,
+#cards::after,#chess::after{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease; 
+    opacity: 0;
+}
+
+#badminton:hover::after,#tt:hover::after,#lawn_tennis:hover::after,#squash:hover::after,
+#carom:hover::after,#cards:hover::after,#chess:hover::after{
+    opacity: 1;
+}
+
+
+
+#badminton{
+    background-image: url("images/badminton.png");
+    
+}
+#badminton::after{
+    content: "Badminton";
+}
+
+#tt{
+    background-image: url("images/table-tennis.png");
+}
+#tt::after{
+    content: "Table Tennis";
+}
+
+#lawn_tennis{
+    background-image: url("images/tennis-player.png");
+}
+#lawn_tennis::after{
+    content: "Lawn tennis";
+}
+
+#squash{
+    background-image: url("images/squash-racquet.png");
+    
+}
+#squash::after{
+    content: "Squash";
+}
+
+#carom{
+    background-image: url("images/carrom.png");
+    
+}
+#carom::after{
+    content: "Carrom";
+}
+
+#cards{
+    background-image: url("images/cards.png");
+    
+}
+#cards::after{
+    content: "Cards";
+}
+
+#chess{
+    background-image: url("images/chess.png");
+    
+}
+#chess::after{
+    content: "Chess";
+}
+
+/* styling sprints */
+
+#m100,#m200,#m400,#m800{
+    text-decoration: none;
+    color: #000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 70px;   
+    width: 70px;
+    margin: 0 10px 0 0;
+    border: solid 1px black;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image within the div */
+}
+
+#m100:hover,#m200:hover,#m400:hover,#m800:hover{
+    background-image: none;
+    background-color: #000;
+    color: #fff;
+}
+
+#m100::after,#m200::after,#m400::after,#m800::after{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease; 
+    opacity: 0;
+}
+
+#m100:hover::after,#m200:hover::after,#m400:hover::after,#m800:hover::after{
+    opacity: 1;
+}
+
+/* styling jump and throw events */
+
+#javelin,#discuss,#shotput,#long_jump{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    margin: 0 10px 0 0;
+    border: solid 1px #000;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image within the div */
+}
+
+#javelin:hover,#discuss:hover,#shotput:hover,#long_jump:hover{
+    background-image: none;
+    background-color: #000;
+    color: #fff;
+}
+
+#javelin::after,#discuss::after,#shotput::after,#long_jump::after{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease; 
+    opacity: 0;
+}
+
+#javelin:hover::after,#discuss:hover::after,#shotput:hover::after,#long_jump:hover::after{
+    opacity: 1;
+}
+
+#javelin{
+    background-image: url("images/javelin-throw.png");
+    
+}
+#javelin::after{
+    content: "Javelin Throw";
+}
+
+#discuss{
+    background-image: url("images/disc-throw.png");
+}
+#discuss::after{
+    content: "Discuss Throw";
+}
+
+#shotput{
+    background-image: url("images/hammer-throw.png");
+}
+#shotput::after{
+    content: "Shot Put";
+}
+
+#long_jump{
+    background-image: url("images/long-jump.png");
+    
+}
+
+#long_jump::after{
+    content: "Long Jump";
+}
+
+/* styling team sports*/
+
+#football,#box_cricket,#tug_of_war,#relay{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    margin: 0 10px 0 0;
+    border: solid 1px #000;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image within the div */
+}
+
+#football:hover,#box_cricket:hover,#tug_of_war:hover,#relay:hover{
+    background-image: none;
+    background-color: #000;
+    color: #fff;
+}
+
+#football::after,#box_cricket::after,#tug_of_war::after,#relay::after{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease; 
+    opacity: 0;
+}
+
+#football:hover::after,#box_cricket:hover::after,#tug_of_war:hover::after,#relay:hover::after{
+    opacity: 1;
+}
+
+#football{
+    background-image: url("images/football.png");
+    
+}
+#football::after{
+    content: "Football";
+}
+
+#box_cricket{
+    background-image: url("images/cricket.png");
+}
+#box_cricket::after{
+    content: "Cricket";
+}
+
+#tug_of_war{
+    background-image: url("images/rope.png");
+}
+#tug_of_war::after{
+    content: "Tug of War";
+}
+
+#relay{
+    background-image: url("images/pass-the-baton.png");
+    
+}
+
+#relay::after{
+    content: "Relay";
+}
+
+/* Styling the marathons */
+#k5_under_45,#k5_over_45,#k3_women{
+    text-decoration: none;
+    color: #000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 70px;   
+    width: 90px;
+    margin: 0 10px 0 0;
+    border: solid 1px black;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image within the div */
+}
+
+#k5_under_45:hover,#k5_over_45:hover,#k3_women:hover{
+    background-image: none;
+    background-color: #000;
+    color: #fff;
+}
+
+#k5_under_45::after,#k5_over_45::after,#k3_women::after{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease; 
+    opacity: 0;
+}
+
+#k5_under_45:hover::after,#k5_over_45:hover::after,#k3_women:hover::after{
+    opacity: 1;
+}
+
+/* Styling the special Events*/
+
+#volleyball,#tug_women{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    margin: 0 10px 0 0;
+    border: solid 1px #000;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image within the div */
+}
+
+#volleyball:hover,#tug_women:hover{
+    background-image: none;
+    background-color: #000;
+    color: #fff;
+}
+
+#volleyball::after,#tug_women::after{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease; 
+    opacity: 0;
+}
+
+#volleyball:hover::after,#tug_women:hover::after{
+    opacity: 1;
+}
+
+
+
+#volleyball{
+    background-image: url("images/volleyball.png");
+    
+}
+#volleyball::after{
+    content: "Volleyball";
+}
+
+#tug_women{
+    background-image: url("images/rope.png");
+}
+#tug_women::after{
+    content: "Tug of War (Women)";
+}
+
+/* Styling the footer */
+
+footer {
+    background-color: #069660;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 10px auto;
+}

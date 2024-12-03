@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+}
+
+/* Styling the logo header */
+
+.logo_header {
+    margin: 10px auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_header img {
+    height : 100px;
+    width : 176px;
+}
+
+/* Styling the menu */
+
+.menu { 
+    box-sizing: border-box;
+    margin: 10px auto;
+    width: 800px;
+    height: 40px;
+    border-top: solid 3px #989da0;
+    border-bottom: solid 3px #989da0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.menu a {
+    display: inline-block;  
+    width: 197px;
+    color : #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a #upcoming_events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a #completed_events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a #points_table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a #teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the badminton categories*/
+
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    color: #f74747;
+}
+
+.categories{
+    margin: 0 auto;
+    width: 800px;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#men_single,#men_doubles,#women_single,#women_doubles{
+    text-decoration: none;
+    color: #000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 70px;   
+    width: 70px;
+    margin: 0 10px 0 0;
+    border: solid 1px black;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image within the div */
+}
+
+#men_single:hover,#men_doubles:hover,#women_single:hover,#women_doubles:hover{
+    background-image: none;
+    background-color: #000;
+    color: #fff;
+}
+
+#men_single::after,#men_doubles::after,#women_single::after,#women_doubles::after{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease; 
+    opacity: 0;
+}
+
+#men_single:hover::after,#men_doubles:hover::after,#women_single:hover::after,#women_doubles:hover::after{
+    opacity: 1;
+}
+
+/* Styling individual tables */
+table{
+    margin: 10px auto;
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Styling the footer */
+
+footer {
+    background-color: #069660;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 10px auto;
+}
