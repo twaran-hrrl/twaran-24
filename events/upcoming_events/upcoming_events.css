@@ -149,6 +149,12 @@ h3{
     text-align: center;
 }
 
+/* hiding the future games */
+
+.display_later{
+    display: none;    
+}
+
 /* Styling the footer */
 
 footer {
